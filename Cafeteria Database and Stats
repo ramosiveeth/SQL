@@ -1,0 +1,25 @@
+--Create a Cafeteria Database 
+
+CREATE TABLE Menu_Items (id integer, name text, quantity integer, price integer,sold integer);
+
+Insert into Menu_Items Values (1,"Nachos",20,5,15);
+Insert into Menu_Items Values (2,"Chicken Nuggets",22,6,15);
+Insert into Menu_Items Values (3,"Fries",40,5,39);
+Insert into Menu_Items Values (4,"Hamburger",40,10,32);
+Insert into Menu_Items Values (5,"Cheeseburger",35,12,26);
+Insert into Menu_Items Values (6,"Orange Chicken",15,8,9);
+Insert into Menu_Items Values (7,"Tacos",80,5,48);
+Insert into Menu_Items Values (8,"Chips",50,3,50);
+Insert into Menu_Items Values (9,"Salad",15,5,11);
+Insert into Menu_Items Values (10,"Burritos",28,15,20);
+Insert into Menu_Items Values (11,"Fountain Drink",100,3,26);
+Insert into Menu_Items Values (12,"Bottled Drinks",100,5,54);
+Insert into Menu_Items Values (13,"Macaroni Salad",52,6,8);
+Insert into Menu_Items Values (14,"Fruit Salad",18,8,18);
+Insert into Menu_Items Values (15,"Rice",45,2,41);
+
+--Display the database ordered by price 
+Select * From Menu_Items Order by price;
+
+--what is the average of the amount of items sold?
+Select AVG(sold) From Menu_Items;
